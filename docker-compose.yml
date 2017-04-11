@@ -8,8 +8,8 @@ services:
     volumes_from:
       - php
     volumes:
-      - ./docker/web/project.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/project.conf:/etc/nginx/conf.d/default.conf
   php:
-    image: php:fpm-alpine
+    build: docker/fpm
     volumes:
       - .:/project
