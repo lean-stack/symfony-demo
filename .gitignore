@@ -1,3 +1,11 @@
+# Sensible data
+/.env
+
+# Docker enviroment
+!/docker/mysql/data
+/docker/mysql/data
+!/docker/mysql/data/.gitkeep
+
 # Edtor/IDE settings
 /.idea
 
